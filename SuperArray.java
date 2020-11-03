@@ -15,4 +15,12 @@ public class SuperArray {
 		size++;
 		return true;
 	}
+	public String get(int index) {
+		return data[index];
+	}
+	public String set(int index, String element) {
+		String replacedValue = data[index];
+		data[index] = element;
+		return replacedValue;
+	}
 }
