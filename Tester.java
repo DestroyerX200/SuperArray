@@ -41,12 +41,14 @@ public class Tester {
 		words.add("kani");
 		words.add("uni");
 		words.add("ebi");
-		for (int i = 0; i < 40; i++){
+		for (int i = 0; i < 3; i++){
 			words.add("kani");
 			words.add("uni");
 			words.add("ebi");
 			System.out.println( words.size() );
 		}
 
+		System.out.println(words);
+		System.out.println(k);
     }
 }

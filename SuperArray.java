@@ -33,4 +33,33 @@ public class SuperArray {
 			data[i] = oldData[i];
 		}
 	}
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	public void clear() {
+		data = new String[10];
+		size = 0;
+	}
+	public String toString() {
+		String returnStr = "[";
+		if (isEmpty()) {
+			return "";
+		}
+		else {
+			returnStr += data[0];
+		}
+		for (int i = 1; i < size; i++) {
+			returnStr += ", " + data[i];
+		}
+		returnStr += "]";
+		return returnStr;
+	}
+	// public boolean contains(String s) {
+	// 	for (int i = 0; i < size; i++) {
+	// 		if (data[i].equals(s)) {
+	// 			return true;
+	// 		}
+	// 	}
+	// 	return false;
+	// }
 }
