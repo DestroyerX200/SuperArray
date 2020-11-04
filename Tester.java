@@ -59,5 +59,12 @@ public class Tester {
 		k.add("Banana");
 		k.add("Citrus");
 		System.out.println(k);
+
+		System.out.println();
+
+		k.add(2, "Kiwi");
+		System.out.println(k);
+		k.add(1, "Heya");
+		System.out.println(k);
     }
 }

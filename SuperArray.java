@@ -2,15 +2,15 @@ public class SuperArray {
 	private String[] data;
 	private int size;
 
-	public SuperArray(int initialCapacity) {
-		data = new String[initialCapacity];
+	public SuperArray() {
+		data = new String[10];
 		size = 0;
 	}
 	public int size() {
 		return size;
 	}
 	public boolean add(String element) {
-		if (size + 1 > data.length) {
+		if (size == data.length) {
 			resize();
 		}
 		data[size] = element;
@@ -60,5 +60,26 @@ public class SuperArray {
 			}
 		}
 		return false;
+	}
+	public SuperArray(int initialCapacity) {
+		data = new String[initialCapacity];
+		size = 0;
+	}
+	public void add(int index, String element) {
+		if (size == data.length) {
+			resize();
+		}
+		String[] oldData = new String[size];
+		for (int i = 0; i < oldData.length; i++) {
+			oldData[i] = data[i];
+		}
+		size++;
+		for (int i = 0; i < index; i++) {
+			data[i] = oldData[i];
+		}
+		data[index] = element;
+		for (int j = index + 1; j < size; j++) {
+			data[j] = oldData[j - 1];
+		}
 	}
 }
