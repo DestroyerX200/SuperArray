@@ -69,9 +69,19 @@ public class Tester {
 
 		System.out.println();
 		System.out.println("remove test cases:");
+		System.out.println(k.size());
 		k.add(1, "Heya");
 		System.out.println(k);
+		System.out.println(k.size());
 		k.remove(2);
 		System.out.println(k);
+		System.out.println(k.size());
+
+		System.out.println();
+		System.out.println("indexOf test cases:");
+		k.add(5, "Heya");
+		System.out.println(k);
+		System.out.println(k.indexOf("Apple"));
+		System.out.println(k.indexOf("Kiwi"));
     }
 }
