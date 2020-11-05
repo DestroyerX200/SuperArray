@@ -66,5 +66,12 @@ public class Tester {
 		System.out.println(k);
 		k.add(1, "Heya");
 		System.out.println(k);
+
+		System.out.println();
+		System.out.println("remove test cases:");
+		k.add(1, "Heya");
+		System.out.println(k);
+		k.remove(2);
+		System.out.println(k);
     }
 }
