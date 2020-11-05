@@ -83,5 +83,11 @@ public class Tester {
 		System.out.println(k);
 		System.out.println(k.indexOf("Apple"));
 		System.out.println(k.indexOf("Kiwi"));
+
+		System.out.println();
+		System.out.println("toArray test cases:");
+		System.out.println(k);
+		String[] fruits = k.toArray();
+		System.out.println(fruits[3]);
     }
 }
