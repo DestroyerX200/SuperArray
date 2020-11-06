@@ -25,7 +25,7 @@ public class SuperArray {
 		data[index] = element;
 		return replacedValue;
 	}
-	public void resize() {
+	private void resize() {
 		String[] oldData = data;
 		data = new String[2 * oldData.length];
 		for (int i = 0; i < size; i++) {
