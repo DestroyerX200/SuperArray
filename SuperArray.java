@@ -91,8 +91,8 @@ public class SuperArray {
 		for (int i = 0; i < index; i++) {
 			data[i] = oldData[i];
 		}
-		for (int j = index + 1; j < size; j++) {
-			data[j] = oldData[j];
+		for (int j = index; j < size; j++) {
+			data[j] = oldData[j+1];
 		}
 		return oldData[index];
 	}
