@@ -134,5 +134,21 @@ public class Tester {
 		System.out.println(nums.equals(numbers));
 		System.out.println(numbers.equals(nums));
 		System.out.println(nums.equals(fruits));
+
+		System.out.println();
+
+		SuperArray letters = new SuperArray();
+		SuperArray integers = new SuperArray();
+
+		letters.add("a"); letters.add("b"); letters.add("c");
+		letters.add("d"); letters.add("e"); letters.add("f");
+
+		integers.add("0"); integers.add("1"); integers.add("2");
+		integers.add("3");
+
+		System.out.println(integers);
+		System.out.println(letters);
+		System.out.println(Demo.zip(letters, integers));
+		System.out.println(Demo.zip(integers, letters));
     }
 }

@@ -22,6 +22,27 @@ public static SuperArray findOverlap(SuperArray a, SuperArray b) {
 	}
 	return overlaps;
 }
+public static SuperArray zip(SuperArray a, SuperArray b) {
+	SuperArray smallerSuperArray;
+	SuperArray biggerSuperArray;
+	SuperArray zippedSuperArray = new SuperArray(a.size() + b.size());
+	if (a.size() > b.size()) {
+		biggerSuperArray = a;
+		smallerSuperArray = b;
+	}
+	else {
+		biggerSuperArray = b;
+		smallerSuperArray = a;
+	}
+	for (int i = 0; i < smallerSuperArray.size(); i++) {
+		zippedSuperArray.add(a.get(i));
+		zippedSuperArray.add(b.get(i));
+	}
+	for (int i = smallerSuperArray.size(); i < biggerSuperArray.size(); i++) {
+		zippedSuperArray.add(biggerSuperArray.get(i));
+	}
+	return zippedSuperArray;
+}
 public static void main(String[]args){
 	SuperArray words = new SuperArray();
 	//grouped to save vertical space
