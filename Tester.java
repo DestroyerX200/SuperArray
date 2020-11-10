@@ -54,40 +54,55 @@ public class Tester {
 		// System.out.println();
 		// System.out.println(words.contains("kani"));
 		// System.out.println(words.contains("xD"));
-		SuperArray k = new SuperArray(15);
-		k.add("Apple");
-		k.add("Banana");
-		k.add("Citrus");
-		System.out.println(k);
+		
+		// SuperArray k = new SuperArray(15);
+		// k.add("Apple");
+		// k.add("Banana");
+		// k.add("Citrus");
+		// System.out.println(k);
 
-		System.out.println();
+		// System.out.println();
 
-		k.add(2, "Kiwi");
-		System.out.println(k);
-		k.add(1, "Heya");
-		System.out.println(k);
+		// k.add(2, "Kiwi");
+		// System.out.println(k);
+		// k.add(1, "Heya");
+		// System.out.println(k);
 
-		System.out.println();
-		System.out.println("remove test cases:");
-		System.out.println(k.size());
-		k.add(1, "Heya");
-		System.out.println(k);
-		System.out.println(k.size());
-		k.remove(2);
-		System.out.println(k);
-		System.out.println(k.size());
+		// System.out.println();
+		// System.out.println("remove test cases:");
+		// System.out.println(k.size());
+		// k.add(1, "Heya");
+		// System.out.println(k);
+		// System.out.println(k.size());
+		// k.remove(2);
+		// System.out.println(k);
+		// System.out.println(k.size());
 
-		System.out.println();
-		System.out.println("indexOf test cases:");
-		k.add(5, "Heya");
-		System.out.println(k);
-		System.out.println(k.indexOf("Apple"));
-		System.out.println(k.indexOf("Kiwi"));
+		// System.out.println();
+		// System.out.println("indexOf test cases:");
+		// k.add(5, "Heya");
+		// System.out.println(k);
+		// System.out.println(k.indexOf("Apple"));
+		// System.out.println(k.indexOf("Kiwi"));
 
-		System.out.println();
-		System.out.println("toArray test cases:");
-		System.out.println(k);
-		String[] fruits = k.toArray();
-		System.out.println(fruits[3]);
+		// System.out.println();
+		// System.out.println("toArray test cases:");
+		// System.out.println(k);
+		// String[] fruits = k.toArray();
+		// System.out.println(fruits[3]);
+
+		SuperArray multiplesOfTwo = new SuperArray(15);
+		SuperArray multiplesOfThree = new SuperArray(15);
+
+		for (int i = 0; i < 15; i++) {
+			multiplesOfTwo.add(2 * i + "");
+			multiplesOfThree.add(3 * i + "");
+		}
+
+		System.out.println(multiplesOfTwo);
+		System.out.println(multiplesOfThree);
+
+		System.out.println(Demo.findOverlap(multiplesOfTwo, multiplesOfThree)); // should be SuperArray of multiples of 6
+
     }
 }

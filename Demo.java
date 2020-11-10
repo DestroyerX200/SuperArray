@@ -11,6 +11,17 @@ public static void removeDuplicates(SuperArray s) {
 		}
 	}
 }
+public static SuperArray findOverlap(SuperArray a, SuperArray b) {
+	removeDuplicates(a);
+	removeDuplicates(b);
+	SuperArray overlaps = new SuperArray(a.size() + b.size());
+	for (int i = 0; i < a.size(); i++) {
+		if (b.indexOf(a.get(i)) != -1) {
+			overlaps.add(a.get(i));
+		}
+	}
+	return overlaps;
+}
 public static void main(String[]args){
 	SuperArray words = new SuperArray();
 	//grouped to save vertical space
@@ -18,10 +29,6 @@ public static void main(String[]args){
 	words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
 	words.add("una");    words.add("ebi");     words.add("toro"); 
 
-	System.out.println(words);
-	words.remove(2);
-	words.remove(2);
-	words.remove(2);
 	System.out.println(words);
 	removeDuplicates(words);
 	System.out.println(words); }
