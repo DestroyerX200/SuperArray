@@ -120,5 +120,19 @@ public class Tester {
 		System.out.println(fruits.lastIndexOf("banana"));
 		System.out.println(fruits.lastIndexOf("banane"));
 		System.out.println(fruits.lastIndexOf("Kiwi"));
+
+		System.out.println();
+
+		SuperArray numbers = new SuperArray(20);
+		SuperArray nums = new SuperArray(25);
+		for (int i = 0; i < 16; i++) {
+			numbers.add(i + "");
+			nums.add(i + "");
+		}
+		System.out.println(nums);
+		System.out.println(numbers);
+		System.out.println(nums.equals(numbers));
+		System.out.println(numbers.equals(nums));
+		System.out.println(nums.equals(fruits));
     }
 }
