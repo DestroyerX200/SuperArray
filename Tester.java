@@ -104,5 +104,21 @@ public class Tester {
 
 		System.out.println(Demo.findOverlap(multiplesOfTwo, multiplesOfThree)); // should be SuperArray of multiples of 6
 
+		SuperArray fruits = new SuperArray();
+
+		System.out.println();
+
+		fruits.add("apple");
+		fruits.add("banane");
+		fruits.add("banana");
+		fruits.add("anana");
+		fruits.add("pineapple");
+		fruits.add("apple");
+		fruits.add("banana");
+		fruits.add("apple");
+		System.out.println(fruits.lastIndexOf("apple"));
+		System.out.println(fruits.lastIndexOf("banana"));
+		System.out.println(fruits.lastIndexOf("banane"));
+		System.out.println(fruits.lastIndexOf("Kiwi"));
     }
 }

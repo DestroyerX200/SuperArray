@@ -111,4 +111,12 @@ public class SuperArray {
 		}
 		return returnArray;
 	}
+	public int lastIndexOf(String value) {
+		for (int i = size - 1; i >= 0; i--) {
+			if (get(i).equals(value)) {
+				return i;
+			}
+		}
+		return -1;
+	}
 }
