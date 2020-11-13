@@ -99,6 +99,10 @@ public class SuperArray {
 		}
 	}
 	public String remove(int index) {
+		if ( index < 0 || index > size() ) {
+			throw new IndexOutOfBoundsException("index " + index + 
+				" is out of range for size " + size() );
+		}
 		String[] oldData = new String[size];
 		for (int i = 0; i < oldData.length; i++) {
 			oldData[i] = data[i];

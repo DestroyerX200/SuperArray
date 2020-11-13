@@ -204,5 +204,19 @@ public class Tester {
 			System.out.println(e);
 		}
 
+		try {SuperArray k = new SuperArray(10);
+			k.remove(-1);
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+
+		try {SuperArray k = new SuperArray(10);
+			k.remove(2);
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+
     }
 }
