@@ -91,64 +91,66 @@ public class Tester {
 		// String[] fruits = k.toArray();
 		// System.out.println(fruits[3]);
 
-		SuperArray multiplesOfTwo = new SuperArray(15);
-		SuperArray multiplesOfThree = new SuperArray(15);
+		// SuperArray multiplesOfTwo = new SuperArray(15);
+		// SuperArray multiplesOfThree = new SuperArray(15);
 
-		for (int i = 0; i < 15; i++) {
-			multiplesOfTwo.add(2 * i + "");
-			multiplesOfThree.add(3 * i + "");
-		}
+		// for (int i = 0; i < 15; i++) {
+		// 	multiplesOfTwo.add(2 * i + "");
+		// 	multiplesOfThree.add(3 * i + "");
+		// }
 
-		System.out.println(multiplesOfTwo);
-		System.out.println(multiplesOfThree);
+		// System.out.println(multiplesOfTwo);
+		// System.out.println(multiplesOfThree);
 
-		System.out.println(Demo.findOverlap(multiplesOfTwo, multiplesOfThree)); // should be SuperArray of multiples of 6
+		// System.out.println(Demo.findOverlap(multiplesOfTwo, multiplesOfThree)); // should be SuperArray of multiples of 6
 
-		SuperArray fruits = new SuperArray();
+		// SuperArray fruits = new SuperArray();
 
-		System.out.println();
+		// System.out.println();
 
-		fruits.add("apple");
-		fruits.add("banane");
-		fruits.add("banana");
-		fruits.add("anana");
-		fruits.add("pineapple");
-		fruits.add("apple");
-		fruits.add("banana");
-		fruits.add("apple");
-		System.out.println(fruits.lastIndexOf("apple"));
-		System.out.println(fruits.lastIndexOf("banana"));
-		System.out.println(fruits.lastIndexOf("banane"));
-		System.out.println(fruits.lastIndexOf("Kiwi"));
+		// fruits.add("apple");
+		// fruits.add("banane");
+		// fruits.add("banana");
+		// fruits.add("anana");
+		// fruits.add("pineapple");
+		// fruits.add("apple");
+		// fruits.add("banana");
+		// fruits.add("apple");
+		// System.out.println(fruits.lastIndexOf("apple"));
+		// System.out.println(fruits.lastIndexOf("banana"));
+		// System.out.println(fruits.lastIndexOf("banane"));
+		// System.out.println(fruits.lastIndexOf("Kiwi"));
 
-		System.out.println();
+		// System.out.println();
 
-		SuperArray numbers = new SuperArray(20);
-		SuperArray nums = new SuperArray(25);
-		for (int i = 0; i < 16; i++) {
-			numbers.add(i + "");
-			nums.add(i + "");
-		}
-		System.out.println(nums);
-		System.out.println(numbers);
-		System.out.println(nums.equals(numbers));
-		System.out.println(numbers.equals(nums));
-		System.out.println(nums.equals(fruits));
+		// SuperArray numbers = new SuperArray(20);
+		// SuperArray nums = new SuperArray(25);
+		// for (int i = 0; i < 16; i++) {
+		// 	numbers.add(i + "");
+		// 	nums.add(i + "");
+		// }
+		// System.out.println(nums);
+		// System.out.println(numbers);
+		// System.out.println(nums.equals(numbers));
+		// System.out.println(numbers.equals(nums));
+		// System.out.println(nums.equals(fruits));
 
-		System.out.println();
+		// System.out.println();
 
-		SuperArray letters = new SuperArray();
-		SuperArray integers = new SuperArray();
+		// SuperArray letters = new SuperArray();
+		// SuperArray integers = new SuperArray();
 
-		letters.add("a"); letters.add("b"); letters.add("c");
-		letters.add("d"); letters.add("e"); letters.add("f");
+		// letters.add("a"); letters.add("b"); letters.add("c");
+		// letters.add("d"); letters.add("e"); letters.add("f");
 
-		integers.add("0"); integers.add("1"); integers.add("2");
-		integers.add("3");
+		// integers.add("0"); integers.add("1"); integers.add("2");
+		// integers.add("3");
 
-		System.out.println(integers);
-		System.out.println(letters);
-		System.out.println(Demo.zip(letters, integers));
-		System.out.println(Demo.zip(integers, letters));
+		// System.out.println(integers);
+		// System.out.println(letters);
+		// System.out.println(Demo.zip(letters, integers));
+		// System.out.println(Demo.zip(integers, letters));
+
+		SuperArray error = new SuperArray(-4);
     }
 }
