@@ -151,6 +151,30 @@ public class Tester {
 		// System.out.println(Demo.zip(letters, integers));
 		// System.out.println(Demo.zip(integers, letters));
 
-		SuperArray error = new SuperArray(-4);
+		//SuperArray error = new SuperArray(-4);
+
+		try {SuperArray error = new SuperArray(-4);
+		}
+		catch (IllegalArgumentException e) {
+			System.out.println(e);
+		}
+		
+		// SuperArray g = new SuperArray(10);
+		// g.add(2, "error");
+
+		try {SuperArray k = new SuperArray(10);
+			k.add(2, "error");
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+
+		try {SuperArray k = new SuperArray(10);
+			k.add(-1, "error");
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+		
     }
 }

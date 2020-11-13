@@ -70,6 +70,10 @@ public class SuperArray {
 		size = 0;
 	}
 	public void add(int index, String element) {
+		if ( index < 0 || index >= size() ) {
+			throw new IndexOutOfBoundsException("index " + index + 
+				" is out of range.");
+		}
 		if (size == data.length) {
 			resize();
 		}
