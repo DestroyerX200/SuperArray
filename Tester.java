@@ -175,6 +175,20 @@ public class Tester {
 		catch (IndexOutOfBoundsException e) {
 			System.out.println(e);
 		}
-		
+
+		try {SuperArray k = new SuperArray(10);
+			k.set(3, "error");
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+
+		try {SuperArray k = new SuperArray(10);
+			k.set(-1, "error");
+		}
+		catch (IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+
     }
 }
