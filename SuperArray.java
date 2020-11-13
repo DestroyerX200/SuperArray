@@ -18,12 +18,16 @@ public class SuperArray {
 		return true;
 	}
 	public String get(int index) {
+		if ( index < 0 || index >= size() ) {
+			throw new IndexOutOfBoundsException("index " + index + 
+				" is out of range for size " + size() );
+		}
 		return data[index];
 	}
 	public String set(int index, String element) {
 		if ( index < 0 || index >= size() ) {
 			throw new IndexOutOfBoundsException("index " + index + 
-				" is out of range.");
+				" is out of range for size " + size() );
 		}
 		String replacedValue = data[index];
 		data[index] = element;
@@ -74,9 +78,9 @@ public class SuperArray {
 		size = 0;
 	}
 	public void add(int index, String element) {
-		if ( index < 0 || index >= size() ) {
+		if ( index < 0 || index > size() ) {
 			throw new IndexOutOfBoundsException("index " + index + 
-				" is out of range.");
+				" is out of range for size " + size() );
 		}
 		if (size == data.length) {
 			resize();
